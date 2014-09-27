@@ -5,6 +5,26 @@ set shiftwidth=2
 set softtabstop=2 
 set autoindent 
 set smartindent 
+set showcmd
+set ruler
+set history=10000
+set hlsearch
+set incsearch
+set gdefault
+set ignorecase
+set smartcase
+set backspace=indent,eol,start
+set laststatus=2
+set cmdheight=2
+set scrolloff=8
+set sidescrolloff=16
+set nobackup
+set noswapfile
+set autoread
+set mouse=a
+set cmdheight=2
+set number
+set cursorline
 syntax on
 
 inoremap <silent> jj <ESC>
@@ -33,6 +53,8 @@ nnoremap <silent> <Space>uf :<C-u>Unite file buffer<CR>
 nnoremap <silent> <Space>uu :<C-u>Unite buffer<CR>
 
 NeoBundle 'git://github.com/kien/ctrlp.vim.git'
+NeoBundle 'git://github.com/scrooloose/nerdtree.git'
+nnoremap <silent> <Space>nt :<C-u>NERDTree<CR>
 
 call neobundle#end()
 

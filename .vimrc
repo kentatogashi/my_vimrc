@@ -7,6 +7,8 @@ set softtabstop=2
 set autoindent 
 set smartindent 
 set showcmd
+set showmatch
+set title
 set ruler
 set history=10000
 set hlsearch
@@ -58,7 +60,7 @@ NeoBundle 'git://github.com/scrooloose/nerdtree.git'
 nnoremap <silent> <Space>nt :<C-u>NERDTree<CR>
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'nathanaelkane/vim-indent-guides'
-colorscheme default 
+colorscheme desert 
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_start_level=2
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#444433 ctermbg=black

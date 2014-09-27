@@ -54,9 +54,8 @@ nnoremap <silent> <Space>uy :<C-u>Unite history/yank<CR>
 nnoremap <silent> <Space>ub :<C-u>Unite file_mru buffer<CR>
 nnoremap <silent> <Space>uf :<C-u>Unite file buffer<CR>
 nnoremap <silent> <Space>uu :<C-u>Unite buffer<CR>
-
-NeoBundle 'git://github.com/kien/ctrlp.vim.git'
-NeoBundle 'git://github.com/scrooloose/nerdtree.git'
+NeoBundle 'kien/ctrlp.vim.git'
+NeoBundle 'scrooloose/nerdtree.git'
 nnoremap <silent> <Space>nt :<C-u>NERDTree<CR>
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'nathanaelkane/vim-indent-guides'

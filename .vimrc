@@ -32,6 +32,8 @@ nnoremap <silent> <Space>ub :<C-u>Unite file_mru buffer<CR>
 nnoremap <silent> <Space>uf :<C-u>Unite file buffer<CR>
 nnoremap <silent> <Space>uu :<C-u>Unite buffer<CR>
 
+NeoBundle 'git://github.com/kien/ctrlp.vim.git'
+
 call neobundle#end()
 
 filetype plugin indent on

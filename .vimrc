@@ -1,4 +1,5 @@
 set nocompatible
+filetype off
 set expandtab 
 set tabstop=2 
 set shiftwidth=2 
@@ -55,6 +56,7 @@ nnoremap <silent> <Space>uu :<C-u>Unite buffer<CR>
 NeoBundle 'git://github.com/kien/ctrlp.vim.git'
 NeoBundle 'git://github.com/scrooloose/nerdtree.git'
 nnoremap <silent> <Space>nt :<C-u>NERDTree<CR>
+NeoBundle 'tpope/vim-endwise'
 
 call neobundle#end()
 

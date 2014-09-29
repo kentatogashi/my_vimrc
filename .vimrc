@@ -56,6 +56,7 @@ nnoremap <silent> <Space>uf :<C-u>Unite file buffer<CR>
 nnoremap <silent> <Space>uu :<C-u>Unite buffer<CR>
 NeoBundle 'kien/ctrlp.vim.git'
 NeoBundle 'scrooloose/nerdtree.git'
+let NERDTreeShowHidden = 1
 nnoremap <silent> <Space>nt :<C-u>NERDTree<CR>
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'nathanaelkane/vim-indent-guides'
@@ -67,7 +68,15 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#333344 ctermbg=darkgr
 let g:indent_guides_guide_size = 1
 NeoBundle 'thinca/vim-quickrun'
 nnoremap <silent> <Space>qr :<C-u>QuickRun<CR>
+NeoBundle 'tpope/vim-rails'
+autocmd User Rails nmap :<C-u>Rcontroller :<C-u>Rc
+autocmd User Rails nmap :<C-u>Rmodel :<C-u>Rm
+autocmd User Rails nmap :<C-u>Rview :<C-u>Rv
+NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'sudo.vim'
 
+" NeoBundle 'vim-scripts/dbext'
+" cd ~/.vim/bundle; git clone https://github.com/vim-scripts/dbext.vim
 call neobundle#end()
 
 filetype plugin indent on
